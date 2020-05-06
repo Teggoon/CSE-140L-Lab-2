@@ -6,10 +6,11 @@ module alarm(
              amin,
 			 thrs,
 			 ahrs,
+  input enable,
   output logic buzz
 );
 
   always_comb
-    buzz = tmin==amin && thrs==ahrs;
+    buzz = (enable && tmin==amin && thrs==ahrs);
 
 endmodule

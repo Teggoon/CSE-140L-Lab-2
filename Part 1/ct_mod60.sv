@@ -10,13 +10,12 @@ module ct_mod60(
   always_ff @(posedge clk)
     if(rst)
 	  ct_out <= 0;
-	else if(en) 
+	else if(en) begin
 	  ct_out <= (ct_out+1)%7'd60; //7'h3c;
-  always_ff @(posedge clk)
-    if(rst) 
-	  ctq <= 0;
-	else
-	  ctq    <= ct_out;
-  assign z = ctq && !ct_out;
+	  ctq <= ct_out;
+	end
+
+
+assign z = (ct_out == 7'd59);
 
 endmodule

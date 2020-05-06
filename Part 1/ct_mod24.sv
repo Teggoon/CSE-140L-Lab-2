@@ -14,7 +14,7 @@ module ct_mod24(
 	else if(en)
 	  ct_out <= (ct_out+1)%(7'd24);	  // modulo operator
 //  assign   z = !ct_out;
-  always_comb z = !ct_out;	  // always @(*)   // always @(ct_out)
+  always_comb z = (ct_out == 7'd23);	  // always @(*)   // always @(ct_out)
 
 endmodule
 
