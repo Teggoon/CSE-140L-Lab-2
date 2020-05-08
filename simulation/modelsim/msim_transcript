@@ -1,0 +1,174 @@
+# Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# do Lab2_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/Daniel/Desktop/CSE\ 140L/Lab\ 2\ fr/CSE-140L-Lab-2/Part\ 2 {C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 2/ct_mod24.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:48:38 on May 07,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 2" C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 2/ct_mod24.sv 
+# -- Compiling module ct_mod24
+# 
+# Top level modules:
+# 	ct_mod24
+# End time: 23:48:38 on May 07,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Daniel/Desktop/CSE\ 140L/Lab\ 2\ fr/CSE-140L-Lab-2/Part\ 2 {C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 2/ct_mod60.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:48:39 on May 07,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 2" C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 2/ct_mod60.sv 
+# -- Compiling module ct_mod60
+# 
+# Top level modules:
+# 	ct_mod60
+# End time: 23:48:39 on May 07,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Daniel/Desktop/CSE\ 140L/Lab\ 2\ fr/CSE-140L-Lab-2/Part\ 2 {C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 2/lcd_int3.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:48:39 on May 07,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 2" C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 2/lcd_int3.sv 
+# -- Compiling module lcd_int
+# 
+# Top level modules:
+# 	lcd_int
+# End time: 23:48:39 on May 07,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Daniel/Desktop/CSE\ 140L/Lab\ 2\ fr/CSE-140L-Lab-2/Part\ 2 {C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 2/ct_mod7.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:48:39 on May 07,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 2" C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 2/ct_mod7.sv 
+# -- Compiling module ct_mod7
+# 
+# Top level modules:
+# 	ct_mod7
+# End time: 23:48:39 on May 07,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Daniel/Desktop/CSE\ 140L/Lab\ 2\ fr/CSE-140L-Lab-2/Part\ 2 {C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 2/struct_diag.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:48:39 on May 07,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 2" C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 2/struct_diag.sv 
+# -- Compiling module struct_diag
+# 
+# Top level modules:
+# 	struct_diag
+# End time: 23:48:39 on May 07,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Daniel/Desktop/CSE\ 140L/Lab\ 2\ fr/CSE-140L-Lab-2/Part\ 2 {C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 2/alarm.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:48:39 on May 07,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 2" C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 2/alarm.sv 
+# -- Compiling module alarm
+# 
+# Top level modules:
+# 	alarm
+# End time: 23:48:39 on May 07,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work {C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 2/lab2_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:48:50 on May 07,2020
+# vlog -reportprogress 300 -work work C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 2/lab2_tb.sv 
+# -- Compiling package lab2_tb_sv_unit
+# -- Compiling module lab2_tb
+# 
+# Top level modules:
+# 	lab2_tb
+# End time: 23:48:50 on May 07,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -l msim_transcript work.lab2_tb
+# vsim -gui -l msim_transcript work.lab2_tb 
+# Start time: 23:48:59 on May 07,2020
+# Loading sv_std.std
+# Loading work.lab2_tb_sv_unit
+# Loading work.lab2_tb
+# Loading work.struct_diag
+# Loading work.ct_mod60
+# Loading work.ct_mod24
+# Loading work.ct_mod7
+# Loading work.lcd_int
+# Loading work.alarm
+# ** Warning: (vsim-3017) C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 2/struct_diag.sv(114): [TFMPC] - Too few port connections. Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /lab2_tb/sd/Daydisp File: C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 2/lcd_int3.sv
+# ** Warning: (vsim-3722) C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 2/struct_diag.sv(114): [TFMPC] - Missing connection for port 'Segment1'.
+run -all
+# buzz = x                    0
+# buzz = 1                 1000
+# 5':current time before setting:'00000', only 1 day digit, all initial values are 0
+#  _   _   _    _   _  
+# | | | | | |  | | | | 
+# |_| |_| |_|  |_| |_| 
+# buzz = 0                 7000
+# 5':current time after setting,'40750', increment day successful
+#      _   _    _   _  
+# |_| | |   |  |_  |_  
+#   | |_|   |   _|  _| 
+# display alarm time before setting:'40000', alarm digits does not affect day digit
+#      _   _    _   _  
+# |_| | | | |  | | | | 
+#   | |_| |_|  |_| |_| 
+# display alarm time after setting:'40801',alarm buzz at 0801
+#      _   _    _      
+# |_| | | |_|  | |   | 
+#   | |_| |_|  |_|   | 
+# display current time after setting alarm
+#      _   _    _   _  
+# |_| | |   |  |_  |_  
+#   | |_|   |   _|  _| 
+#      _   _    _   _  
+# |_| | |   |  |_  |_| 
+#   | |_|   |   _|  _| 
+# Buzz on Friday.
+#      _   _    _   _  
+# |_| | | |_|  | | | | 
+#   | |_| |_|  |_| |_| 
+# buzz = 1               887000
+#      _   _    _      
+# |_| | | |_|  | |   | 
+#   | |_| |_|  |_|   | 
+# buzz = 0              1007000
+# 5': Day increase successfully by hours reaching 24
+#  _   _   _    _      
+# |_  | | |_|  | |   | 
+#  _| |_| |_|  |_|   | 
+#  _   _   _    _      
+# |_  | | |_|  | |   | 
+# |_| |_| |_|  |_|   | 
+# buzz = 1            519287000
+# 5':Buzz on Friday(4), but not on Sat and Sun (5,6), Buzz again on Mon 0.
+#  _   _   _    _      
+# | | | | |_|  | |   | 
+# |_| |_| |_|  |_|   | 
+# buzz = 0            519407000
+# buzz = 1            692087000
+# buzz = 0            692207000
+# buzz = 1            864887000
+# buzz = 0            865007000
+# buzz = 1           1037687000
+# buzz = 0           1037807000
+# buzz = 1           1210487000
+# buzz = 0           1210607000
+# buzz = 1           1728887000
+# buzz = 0           1729007000
+# buzz = 1           1901687000
+# buzz = 0           1901807000
+# buzz = 1           2074487000
+# buzz = 0           2074607000
+# buzz = 1           2247287000
+# buzz = 0           2247407000
+# buzz = 1           2420087000
+# buzz = 0           2420207000
+# buzz = 1           2938487000
+# buzz = 0           2938607000
+# buzz = 1           3111287000
+# buzz = 0           3111407000
+# buzz = 1           3284087000
+# buzz = 0           3284207000
+# End time: 23:52:34 on May 07,2020, Elapsed time: 0:03:35
+# Errors: 0, Warnings: 2

@@ -1,0 +1,241 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "S1disp[0]",
+					"strict" : false
+				},
+				{
+					"name" : "S1disp[1]",
+					"strict" : false
+				},
+				{
+					"name" : "S1disp[2]",
+					"strict" : false
+				},
+				{
+					"name" : "S1disp[3]",
+					"strict" : false
+				},
+				{
+					"name" : "S1disp[4]",
+					"strict" : false
+				},
+				{
+					"name" : "S1disp[5]",
+					"strict" : false
+				},
+				{
+					"name" : "S1disp[6]",
+					"strict" : false
+				},
+				{
+					"name" : "S0disp[0]",
+					"strict" : false
+				},
+				{
+					"name" : "S0disp[1]",
+					"strict" : false
+				},
+				{
+					"name" : "S0disp[2]",
+					"strict" : false
+				},
+				{
+					"name" : "S0disp[3]",
+					"strict" : false
+				},
+				{
+					"name" : "S0disp[4]",
+					"strict" : false
+				},
+				{
+					"name" : "S0disp[5]",
+					"strict" : false
+				},
+				{
+					"name" : "S0disp[6]",
+					"strict" : false
+				},
+				{
+					"name" : "M1disp[0]",
+					"strict" : false
+				},
+				{
+					"name" : "M1disp[1]",
+					"strict" : false
+				},
+				{
+					"name" : "M1disp[2]",
+					"strict" : false
+				},
+				{
+					"name" : "M1disp[3]",
+					"strict" : false
+				},
+				{
+					"name" : "M1disp[4]",
+					"strict" : false
+				},
+				{
+					"name" : "M1disp[5]",
+					"strict" : false
+				},
+				{
+					"name" : "M1disp[6]",
+					"strict" : false
+				},
+				{
+					"name" : "M0disp[0]",
+					"strict" : false
+				},
+				{
+					"name" : "M0disp[1]",
+					"strict" : false
+				},
+				{
+					"name" : "M0disp[2]",
+					"strict" : false
+				},
+				{
+					"name" : "M0disp[3]",
+					"strict" : false
+				},
+				{
+					"name" : "M0disp[4]",
+					"strict" : false
+				},
+				{
+					"name" : "M0disp[5]",
+					"strict" : false
+				},
+				{
+					"name" : "M0disp[6]",
+					"strict" : false
+				},
+				{
+					"name" : "H1disp[0]",
+					"strict" : false
+				},
+				{
+					"name" : "H1disp[1]",
+					"strict" : false
+				},
+				{
+					"name" : "H1disp[2]",
+					"strict" : false
+				},
+				{
+					"name" : "H1disp[3]",
+					"strict" : false
+				},
+				{
+					"name" : "H1disp[4]",
+					"strict" : false
+				},
+				{
+					"name" : "H1disp[5]",
+					"strict" : false
+				},
+				{
+					"name" : "H1disp[6]",
+					"strict" : false
+				},
+				{
+					"name" : "H0disp[0]",
+					"strict" : false
+				},
+				{
+					"name" : "H0disp[1]",
+					"strict" : false
+				},
+				{
+					"name" : "H0disp[2]",
+					"strict" : false
+				},
+				{
+					"name" : "H0disp[3]",
+					"strict" : false
+				},
+				{
+					"name" : "H0disp[4]",
+					"strict" : false
+				},
+				{
+					"name" : "H0disp[5]",
+					"strict" : false
+				},
+				{
+					"name" : "H0disp[6]",
+					"strict" : false
+				},
+				{
+					"name" : "D0disp[0]",
+					"strict" : false
+				},
+				{
+					"name" : "D0disp[1]",
+					"strict" : false
+				},
+				{
+					"name" : "D0disp[2]",
+					"strict" : false
+				},
+				{
+					"name" : "D0disp[3]",
+					"strict" : false
+				},
+				{
+					"name" : "D0disp[4]",
+					"strict" : false
+				},
+				{
+					"name" : "D0disp[5]",
+					"strict" : false
+				},
+				{
+					"name" : "D0disp[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Buzz",
+					"strict" : false
+				},
+				{
+					"name" : "Alarmset",
+					"strict" : false
+				},
+				{
+					"name" : "Timeset",
+					"strict" : false
+				},
+				{
+					"name" : "Alarmon",
+					"strict" : false
+				},
+				{
+					"name" : "Pulse",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "Minadv",
+					"strict" : false
+				},
+				{
+					"name" : "Hrsadv",
+					"strict" : false
+				},
+				{
+					"name" : "Dayadv",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

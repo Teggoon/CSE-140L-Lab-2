@@ -1,0 +1,198 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Daniel/Desktop/CSE 140L/Lab 1
+valarm
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1588913149
+!i10b 1
+!s100 eDd7e:?@EaFknEnm@nRm21
+I5OP_Pl4_M_05m:CRFo0KV0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 alarm_sv_unit
+S1
+Z3 dC:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 2
+Z4 w1588833189
+8C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 1/alarm.sv
+FC:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 1/alarm.sv
+L0 4
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1588913149.000000
+!s107 C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 1/alarm.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 1/alarm.sv|
+!i113 1
+Z7 o-work work -sv
+Z8 tCvgOpt 0
+vct_mod24
+R0
+R1
+!i10b 1
+!s100 zJ7D<HDHL?l2Fb:zO<EIC2
+IeJ5:n_mH5mb@o;85AUH1E2
+R2
+!s105 ct_mod24_sv_unit
+S1
+R3
+R4
+8C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 1/ct_mod24.sv
+FC:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 1/ct_mod24.sv
+L0 6
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 1/ct_mod24.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 1/ct_mod24.sv|
+!i113 1
+R7
+R8
+vct_mod60
+R0
+R1
+!i10b 1
+!s100 C<GXIL3iGfSdWKmo:mcY01
+IaK?aIV2:X:6DI`m[O`eGz2
+R2
+!s105 ct_mod60_sv_unit
+S1
+R3
+R4
+8C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 1/ct_mod60.sv
+FC:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 1/ct_mod60.sv
+L0 4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 1/ct_mod60.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 1/ct_mod60.sv|
+!i113 1
+R7
+R8
+Xdisplay_tb_sv_unit
+R0
+!s110 1588913354
+!i10b 1
+!s100 NmAlBlMnM<eIOZaJm=4^l1
+IzSE5nJiLf9YI>goIR2M;S2
+VzSE5nJiLf9YI>goIR2M;S2
+!i103 1
+S1
+R3
+R4
+8C:\Users\Daniel\Desktop\CSE 140L\Lab 2 fr\CSE-140L-Lab-2\Part 1\display_tb.sv
+FC:\Users\Daniel\Desktop\CSE 140L\Lab 2 fr\CSE-140L-Lab-2\Part 1\display_tb.sv
+L0 3
+R5
+r1
+!s85 0
+31
+!s108 1588913354.000000
+!s107 C:\Users\Daniel\Desktop\CSE 140L\Lab 2 fr\CSE-140L-Lab-2\Part 1\display_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\Daniel\Desktop\CSE 140L\Lab 2 fr\CSE-140L-Lab-2\Part 1\display_tb.sv|
+!i113 1
+R7
+R8
+vlab2_tb
+R0
+!i10b 1
+!s100 Q6:A`_KNKC0F1]jS6aLzL3
+IS3F4QcaX;nc<:gz0c00@]0
+R2
+!s105 lab2_tb_sv_unit
+S1
+R3
+R4
+Z9 8C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 1/lab2_tb.sv
+Z10 FC:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 1/lab2_tb.sv
+L0 3
+R5
+Z11 !s108 1588913247.000000
+Z12 !s107 display_tb.sv|C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 1/lab2_tb.sv|
+Z13 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 1/lab2_tb.sv|
+!i113 1
+R7
+R8
+Xlab2_tb_sv_unit
+R0
+VT<DEn8GLM7N_YZ<?UDfj42
+r1
+!s85 0
+31
+!i10b 1
+!s100 IPI27f4CzIAg@9Mj_<Kn03
+IT<DEn8GLM7N_YZ<?UDfj42
+!i103 1
+S1
+R3
+w1588911390
+R9
+R10
+Fdisplay_tb.sv
+L0 4
+R5
+R11
+R12
+R13
+!i113 1
+R7
+R8
+vlcd_int
+R0
+R1
+!i10b 1
+!s100 >XckX5Ma8PTa1okiM=Wi81
+IU2ZzL6UXd;>1YnnfcUI0d1
+R2
+!s105 lcd_int3_sv_unit
+S1
+R3
+w1588653747
+8C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 1/lcd_int3.sv
+FC:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 1/lcd_int3.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 1/lcd_int3.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 1/lcd_int3.sv|
+!i113 1
+R7
+R8
+vstruct_diag
+R0
+!s110 1588913150
+!i10b 1
+!s100 g=;:^<2ADLHo`Q[36Je`F1
+IT4VhWGJG;f;6R<9IihVoY0
+R2
+!s105 struct_diag_sv_unit
+S1
+R3
+R4
+8C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 1/struct_diag.sv
+FC:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 1/struct_diag.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 1/struct_diag.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Daniel/Desktop/CSE 140L/Lab 2 fr/CSE-140L-Lab-2/Part 1/struct_diag.sv|
+!i113 1
+R7
+R8
