@@ -8,7 +8,6 @@ module struct_diag(
 		Hrsadv,
 		Dayadv,		  // PART2: +Dayadv
 		DateAdv,			// PART3
-		MonthAdv,		// PART3
 		Alarmon,
 		Pulse,		  // assume 1/sec.
 // 6 decimal digit display (7 segment)
@@ -20,7 +19,7 @@ module struct_diag(
   
   logic[6:0] TSec, TMin, THrs, AMin, AHrs, TDay; // PART2 + TDay
   logic[6:0] Min, Hrs, Days, Date, Month;							// Part3 + Date, Month
-  logic Szero, Mzero, Hzero, Dzero, TMen, THen, AMen, AHen, TDen;  // PART3 + TDen
+  logic Szero, Mzero, Hzero, Dzero, TMen, THen, AMen, AHen, TDen, TDMen;  // PART3 + TDen
 
   
   
@@ -50,15 +49,14 @@ module struct_diag(
 	.clk(Pulse), .rst(Reset), .en(TDen), .ct_out(TDay), .z(Dzero)
     );
 	 
+	 assign TDMen = TDen || (Timeset && DateAdv);
 	 
 	// PART3 start
   ct_mod365 Cct(
-	.clk(Pulse), .rst(Reset), .en(TDen), .outDay(Date), .outMonth(Month)
+	.clk(Pulse), .rst(Reset), .en(TDMen), .outDay(Date), .outMonth(Month)
   );
   // PART3 end
 
-	 
-	 
 	 
 	 assign AMen = (!Timeset && Alarmset && Minadv);
 	 
@@ -75,7 +73,8 @@ module struct_diag(
     .clk(Pulse), .rst(Reset), .en(AHen), .ct_out(AHrs), .z()
     ); 
 
-	 always_comb begin
+	
+	always_comb begin
 		if(Timeset) begin
 			Min = TMin;
 			Hrs = THrs;
@@ -93,24 +92,8 @@ module struct_diag(
 	 end
 	 
 	 //PART2 end
-	 always_comb begin
-		if (Timeset) begin
-			Days = TDay;
-		end
-		else begin 
-			Days = TDay;
-		end
-	 end
-	 //PART2 end
+	 assign Days = TDay;
 	 
-	 
-	 //PART3 start
-	 //Vicente:
-	 // assign variables Date and Month depending on Timeset?
-	 
-	 //PART3 end
-	 
-
 // display drivers (2 digits each, 7 digits total)
   lcd_int Sdisp(
     .bin_in (TSec)  ,

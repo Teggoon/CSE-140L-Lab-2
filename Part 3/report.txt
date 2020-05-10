@@ -1,0 +1,20 @@
+Lab 2 
+
+Haocheng Li (A15608864)
+Vicente Montoya(A15561775)
+
+Part 3 Report:
+
+In this part we implemented the date/month functionality: we added a date and month counter to our clock,
+represented as [Month]/[Date]
+
+In order to implement the date/month functionality, we created the mod365_ct module. This module works a bit
+different than previous counters as it includes two data outputs: one for month and one for date. This also means
+that the inner functionality is a bit different, as it has two output two differents data with respect to a
+single mod365_counter. Then we connected the module to the days counter to allow for carry over, when z in the
+hours module was 1. We also changed display_tb to increase the quality and overall look of our alarm clock.
+
+This approach means that we have a single button to set both the date and the month, to a specific date.
+This has a certain advantage with respect to two separate counters as we cannot set illegal dates such as 
+02/30. However it also means that in order to set the date in one month's advance, we have to analyze in what month
+we are in and how many days need to pass in order to advance to the next month.
