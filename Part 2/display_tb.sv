@@ -8,7 +8,7 @@ task display_tb(input[6:0] seg_j, seg_d,
  // segment A
       if(seg_j[6]) $write(" _ ");
       else         $write("   ");
-      $write(" ' ");
+      $write("   ");
      if(seg_d[6]) $write(" _ ");
      else         $write("   ");
      $write(" ");
@@ -34,7 +34,7 @@ task display_tb(input[6:0] seg_j, seg_d,
 	  else $write(" ");
 	  if(seg_j[5]) $write("|");
 	  else $write(" ");
-	  $write("   ");
+	  $write(" ' ");
 	  
 	  if(seg_d[1]) $write("|");
 	  else $write(" ");

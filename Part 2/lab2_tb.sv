@@ -5,7 +5,6 @@ module lab2_tb();
         Clk = 0,
         Timeset = 0,
         Alarmset = 0,
-		  Dayset = 0,
 		Minadv = 0,
 		Hrsadv = 0,
 		Dayadv = 0,

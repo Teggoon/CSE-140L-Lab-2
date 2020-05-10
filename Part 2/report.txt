@@ -1,0 +1,22 @@
+Lab 2 
+
+Haocheng Li (A15608864)
+Vicente Montoya(A15561775)
+
+Part 2 Report:
+
+In this part we added the day of the week functionality: a simple counter for the day of the week,
+where:
+
+0 represents Monday,
+1 represents Tuesday,
+2 represents Wednesday,
+3 represents Thursday,
+4 represents Friday
+5 represents Saturday, 
+6 represents Friday.
+
+In order to implement the day functionality, we created the mod7_ct module, that works very similar to the 
+previous counters. Then we connected the module to the hours counters to allow for carry over, when z in the
+hours' module was 1. We also changed display_tb to increase the quality and overall look of our alarm clock.
+Finally we changed the alarm feature so that it can only buzz when it is not Saturday or Sunday.

@@ -2,7 +2,6 @@
 // see Structural Diagram in Lab2.pdf
 module struct_diag(
   input Reset,
-		  Dayset, 	  // PART2: + Dayset button
         Timeset, 	  // manual buttons
         Alarmset,	  //	(five total)
 		Minadv,
