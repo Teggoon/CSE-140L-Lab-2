@@ -1,0 +1,12 @@
+Lab 2 
+
+Haocheng Li (A15608864)
+Vicente Montoya(A15561775)
+
+Part 1 Report:
+
+In order to test our alarm clock we had to modify display_tb to include seconds, in order to
+properly debug the seconds to minutes change to avoid the carry over bug (00:59 -> 00:00 -> 01:01).
+Once we got that working tested the seconds to minutes to hours carry over (00:59:59 -> 01:00:00).
+Then we tested the alarm setting, to make sure that it worked properly, and added the functionality to display
+the time when the alarm was being setted. Finally we added the enable feature to the alarm clock.
