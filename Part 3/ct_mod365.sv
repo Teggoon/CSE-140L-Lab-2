@@ -1,0 +1,73 @@
+module ct_mod365(
+  input clk, rst, en,
+  output logic[4:0] outDay, outMonth);
+  logic[6:0] daycount;
+  
+  
+  
+  always_ff @(posedge clk)
+  
+	  daycount <= (daycount+1)%7'd365 + 1;
+  
+    if (rst) begin
+	  outDay <= 1;
+		outMonth <= 1;
+		end
+	else if(en) begin
+    
+    if (daycount <= 31) begin
+      outMonth = 1;
+      outDay = daycount;
+    end
+    else if (daycount <= 31 + 28) begin
+      outMonth = 2;
+      outDay = daycount - 31;
+    end
+    else if (daycount <= 31 + 28 + 31) begin
+      outMonth = 3;
+      outDay = daycount - 31 - 28;
+    end
+    else if (daycount <= 31 + 28 + 31) begin
+      outMonth = 4;
+      outDay = daycount - 31 - 28 - 31;
+    end
+    else if (daycount <= 31 + 28 + 31 + 30) begin
+      outMonth = 5;
+      outDay = daycount - 31 - 28 - 31 - 30;
+    end
+    else if (daycount <= 31 + 28 + 31 + 30 + 31) begin
+      outMonth = 5;
+      outDay = daycount - 31 - 28 - 31 - 30 - 31;
+    end
+    else if (daycount <= 31 + 28 + 31 + 30 + 31 + 30) begin
+      outMonth = 5;
+      outDay = daycount - 31 - 28 - 31 - 30 - 31 - 30;
+    end
+    else if (daycount <= 31 + 28 + 31 + 30 + 31 + 30 + 31) begin
+      outMonth = 5;
+      outDay = daycount - 31 - 28 - 31 - 30 - 31 - 30 - 31;
+    end
+    else if (daycount <= 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31) begin
+      outMonth = 5;
+      outDay = daycount - 31 - 28 - 31 - 30 - 31 - 30 - 31 - 31;
+    end
+    else if (daycount <= 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30) begin
+      outMonth = 5;
+      outDay = daycount - 31 - 28 - 31 - 30 - 31 - 30 - 31 - 31 - 30;
+    end
+    else if (daycount <= 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31) begin
+      outMonth = 5;
+      outDay = daycount - 31 - 28 - 31 - 30 - 31 - 30 - 31 - 31 - 30 - 31;
+    end
+    else if (daycount <= 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30) begin
+      outMonth = 5;
+      outDay = daycount - 31 - 28 - 31 - 30 - 31 - 30 - 31 - 31 - 30 - 31 - 30;
+    end
+    else if (daycount <= 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 31) begin
+      outMonth = 5;
+      outDay = daycount - 31 - 28 - 31 - 30 - 31 - 30 - 31 - 31 - 30 - 31 - 30 - 31;
+    end
+  
+	end
+  
+  endmodule
