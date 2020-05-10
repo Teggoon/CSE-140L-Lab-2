@@ -1,10 +1,14 @@
 // task which drives six consecutive 7=segment displays
-// $fdisplay performs a return / new line feed; $fwrite does not
-task display_tb(input[6:0] seg_d,
+// CSE140L  Lab 2 
+// $display performs a return / new line feed; $write does not
+task display_tb(input[6:0] seg_j, seg_d,
   seg_e, seg_f, seg_g, seg_h, seg_i, Buzz
   );
    begin
  // segment A
+      if(seg_j[6]) $write(" _ ");
+      else         $write("   ");
+      $write(" ' ");
      if(seg_d[6]) $write(" _ ");
      else         $write("   ");
      $write(" ");
@@ -22,10 +26,17 @@ task display_tb(input[6:0] seg_d,
       $write(" ");
 	  if(seg_i[6]) $write(" _ ");
 	  else         $write("   ");
-      
-	$display("");	   
-// segments FGB
-      if(seg_d[1]) $write("|");
+	  $display("");
+ // segments FGB
+ 	  if(seg_j[1]) $write("|");
+	  else $write(" ");
+	  if(seg_j[0]) $write("_");
+	  else $write(" ");
+	  if(seg_j[5]) $write("|");
+	  else $write(" ");
+	  $write("   ");
+	  
+	  if(seg_d[1]) $write("|");
 	  else $write(" ");
 	  if(seg_d[0]) $write("_");
 	  else $write(" ");
@@ -75,9 +86,16 @@ task display_tb(input[6:0] seg_d,
 	  
 	  
 	  $display(""); 
-  
   // segments EDC
-      if(seg_d[2]) $write("|");
+      if(seg_j[2]) $write("|");
+	  else $write(" ");
+	  if(seg_j[3]) $write("_");
+	  else $write(" ");
+	  if(seg_j[4]) $write("|");
+	  else $write(" ");
+	  $write("   ");
+    
+     if(seg_d[2]) $write("|");
 	  else $write(" ");
 	  if(seg_d[3]) $write("_");
 	  else $write(" ");
@@ -126,7 +144,5 @@ task display_tb(input[6:0] seg_d,
 	  if(Buzz) $display("   BUZZ!!!");
 	  
 	  $display("");
-	  
-//	  $fclose("list.txt");
 	end
 endtask
