@@ -2,23 +2,20 @@
 // see Structural Diagram in Lab2.pdf
 module struct_diag(
   input Reset,
-		  Dayset, 	  // PART2: + Dayset button
         Timeset, 	  // manual buttons
         Alarmset,	  //	(five total)
 		Minadv,
 		Hrsadv,
-		Dayadv,		  // PART2: +Dayadv
 		Alarmon,
 		Pulse,		  // assume 1/sec.
 // 6 decimal digit display (7 segment)
   output [6:0] S1disp, S0disp, 
-    M1disp, M0disp, H1disp, H0disp, 
-	 D0disp, 											// PART2 : + day display variable
+    M1disp, M0disp, H1disp, H0disp,
   output logic Buzz);	  // alarm sounds
   
-  logic[6:0] TSec, TMin, THrs, AMin, AHrs, TDay; // PART2 + TDay
-  logic[6:0] Min, Hrs, Days;							// Part2 + Days
-  logic Szero, Mzero, Hzero, Dzero, TMen, THen, AMen, AHen, TDen;  // PART2 + TDen, Dzero
+  logic[6:0] TSec, TMin, THrs, AMin, AHrs;
+  logic[6:0] Min, Hrs;
+  logic Szero, Mzero, Hzero, TMen, THen, AMen, AHen; 
 
   
   
@@ -40,13 +37,6 @@ module struct_diag(
   ct_mod24 Hct(
 	.clk(Pulse), .rst(Reset), .en(THen), .ct_out(THrs), .z(Hzero)
     );
-	 
-	 assign TDen = (Hzero && Mzero && Szero) || (Timeset && Dayadv); // PART2
-	 
-// PART2 Days counter -- runs at either 1/sec or 1/24hrs
-  ct_mod7 Dct(
-	.clk(Pulse), .rst(Reset), .en(TDen), .ct_out(TDay), .z(Dzero)
-    );
 
 	 
 	 
@@ -61,7 +51,6 @@ module struct_diag(
 	
 	assign AHen = (!Timeset && Alarmset && Hrsadv);
 
-	
   ct_mod24 Hreg(
     .clk(Pulse), .rst(Reset), .en(AHen), .ct_out(AHrs), .z()
     ); 
@@ -82,17 +71,6 @@ module struct_diag(
 			end
 		end
 	 end
-	 
-	 //PART2 end
-	 always_comb begin
-		if (Timeset) begin
-			Days = TDay;
-		end
-		else begin 
-			Days = TDay;
-		end
-	 end
-	 //PART2 end
 
 // display drivers (2 digits each, 6 digits total)
   lcd_int Sdisp(
@@ -112,16 +90,11 @@ module struct_diag(
 	.Segment1  (H1disp),
 	.Segment0  (H0disp)
 	);
-	
-  lcd_int Daydisp(
-    .bin_in (Days),
-	.Segment0  (D0disp)
-	);
 
 
 // buzz off :)
   alarm a1(
-    .tmin(TMin), .amin(AMin), .thrs(THrs), .ahrs(AHrs), .day(Days), .enable(Alarmon), .buzz(Buzz)
+    .tmin(TMin), .amin(AMin), .thrs(THrs), .ahrs(AHrs), .enable(Alarmon), .buzz(Buzz)
 	);
 
 endmodule
